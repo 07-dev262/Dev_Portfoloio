@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Jeswani | Portfolio — M.Tech (IT) @ IIPS DAVV & Software Developer</title>
+  <meta name="description" content="Personal Portfolio of Dev Jeswani — M.Tech Integrated IT student at IIPS DAVV, Indore. Passionate about exploring new technologies, Python, C++, and Frontend Development.">
+  <meta name="author" content="Dev Jeswani">
+  <meta name="theme-color" content="#090d16">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Dev Jeswani | Portfolio">
+  <meta property="og:description" content="M.Tech Integrated (IT) Scholar @ IIPS DAVV | Python, C++, Frontend Developer & SIH Participant.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Orbs -->
+  <div class="bg-decor" aria-hidden="true">
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+  </div>
+
+  <!-- ========================================================================
+       Navigation Bar
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Dev Jeswani Home">
+        <span class="logo-badge">DJ</span>
+        <span>Dev Jeswani</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="#contact" class="btn btn-nav-cta">Get in Touch</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero / Intro Section (With Dev's Image at Side of Intro)
+       ======================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      
+      <!-- Left: Introduction & Elevator Pitch -->
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span class="status-dot"></span>
+          <span>Open to Software Roles & Collaborations</span>
+        </div>
+
+        <h1 class="hero-heading">
+          Hi, I'm <span class="gradient-text">Dev Jeswani</span>
+        </h1>
+
+        <!-- Dynamic Typing Role Subtitle -->
+        <div class="hero-dynamic-role" aria-live="polite">
+          <span id="typing-text">M.Tech Integrated (IT) Scholar @ IIPS DAVV</span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <p class="hero-bio">
+          I am an <strong>M.Tech Integrated IT student at IIPS DAVV, Indore</strong> with an unquenchable passion for exploring and mastering new technologies. From competing in the <strong>Smart India Hackathon (SIH)</strong> to developing desktop tools with <strong>Python</strong> and architecting intuitive <strong>frontend web applications</strong>, I thrive on turning ideas into practical, high-value code.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <button class="btn btn-secondary copy-email-btn" title="Copy devjeswani1@gmail.com to clipboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy Email</span>
+          </button>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+
+        <!-- Social Presence Links -->
+        <div class="hero-socials">
+          <span class="social-label">Find me on</span>
+          <div class="social-links">
+            <a href="https://github.com/devjeswani" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Dev Jeswani's GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/devjeswani" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Dev Jeswani's LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:devjeswani1@gmail.com" class="social-icon-btn" title="Email devjeswani1@gmail.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Dev's Image at Side of Intro with Dynamic Tech Badges -->
+      <div class="hero-image-wrapper">
+        <div class="portrait-card">
+          <!-- Floating Decorative Tech Badges -->
+          <div class="floating-chip chip-top-left">
+            <span>🎓</span> IIPS DAVV Indore
+          </div>
+          <div class="floating-chip chip-bottom-right">
+            <span>🚀</span> SIH Participant
+          </div>
+          <div class="floating-chip chip-mid-left">
+            <span>🐍</span> Python & C++
+          </div>
+
+          <div class="portrait-frame">
+            <!-- Dev Jeswani's Personal Photo -->
+            <img 
+              src="assets/images/dev-photo.jpg" 
+              alt="Dev Jeswani - M.Tech Integrated IT Student at IIPS DAVV" 
+              class="portrait-img"
+              id="dev-profile-pic"
+              onerror="this.src='assets/images/dev-avatar.svg'"
+            >
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       About Section
+       ======================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Driven by Curiosity & Continuous Learning</h2>
+        <p class="section-subtitle">Bridging strong foundational computer science theory with hands-on software development.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Story / Background Card -->
+        <div class="about-story-card">
+          <div>
+            <h3 class="about-lead">
+              "I believe that mastering software engineering starts with a genuine curiosity to understand how things work under the hood."
+            </h3>
+            <p class="about-text">
+              I am currently pursuing my <strong>M.Tech Integrated degree in Information Technology at IIPS DAVV</strong> (International Institute of Professional Studies, Devi Ahilya Vishwavidyalaya, Indore). This rigorous 5-year curriculum provides deep insights into computer algorithms, systems programming, and modern software paradigms.
+            </p>
+            <p class="about-text">
+              Beyond lectures, I actively apply my skills by writing software that solves real user difficulties. Whether it is collaborating in high-stakes hackathons like the <strong>Smart India Hackathon (SIH)</strong> to empower Indian farmers, creating an <strong>academic notes repository</strong> for university peers, or engineering an interactive desktop calculator with <strong>Python Tkinter</strong>, I constantly seek out new challenges to expand my technical horizon.
+            </p>
+          </div>
+
+          <!-- Highlight Numbers Grid -->
+          <div class="about-metrics">
+            <div class="metric-item">
+              <div class="metric-number">3+</div>
+              <div class="metric-label">Completed Projects</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number">SIH</div>
+              <div class="metric-label">Hackathon Experience</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number">M.Tech</div>
+              <div class="metric-label">Integrated IT @ DAVV</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar Features Cards -->
+        <div class="about-features">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="feature-content">
+              <h4>Academic Excellence at IIPS DAVV</h4>
+              <p>Studying core IT disciplines including Data Structures, Algorithms, OOP, Database Systems, and Operating Systems with practical lab implementations.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            </div>
+            <div class="feature-content">
+              <h4>Curiosity-First Mindset</h4>
+              <p>Constantly fascinated by emerging technologies, modern frontend architectures, algorithms, and developer tools that improve productivity.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="feature-content">
+              <h4>Collaborative Team Player</h4>
+              <p>Demonstrated team synergy during Smart India Hackathon and university projects, coordinating git workflows, feature design, and deployment.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Skills & Capabilities Section
+       ======================================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tech Stack & Skills</span>
+        <h2 class="section-title">What I Bring to the Table</h2>
+        <p class="section-subtitle">Proficiencies in programming languages, frontend web engineering, and software tooling.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Category 1: Programming Languages -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon cat-lang">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div>
+              <h3>Programming Languages</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Core & Systems</span>
+            </div>
+          </div>
+
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>Python</strong>
+                </span>
+                <span class="skill-badge">Advanced Core</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>C++ (CPP)</strong>
+                </span>
+                <span class="skill-badge">OOP & DSA</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>C Language</strong>
+                </span>
+                <span class="skill-badge">Pointers & Memory</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Frontend Web Development -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon cat-front">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div>
+              <h3>Frontend Development</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Client-Side Web UI</span>
+            </div>
+          </div>
+
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>HTML5 & Semantic Web</strong>
+                </span>
+                <span class="skill-badge">Accessible Structure</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>CSS3 & Modern Styling</strong>
+                </span>
+                <span class="skill-badge">Flexbox / Grid / Glass</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>JavaScript (ES6+)</strong>
+                </span>
+                <span class="skill-badge">DOM & Interactivity</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: GUI & Libraries -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon cat-gui">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <div>
+              <h3>GUI & Libraries</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Desktop & UI Tools</span>
+            </div>
+          </div>
+
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>Python Tkinter</strong>
+                </span>
+                <span class="skill-badge">Desktop UI / Layouts</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>Responsive Web Layouts</strong>
+                </span>
+                <span class="skill-badge">Mobile & Desktop</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>UI/UX Foundations</strong>
+                </span>
+                <span class="skill-badge">Clean Aesthetics</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Tools & Methodologies -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon cat-tools">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div>
+              <h3>Workflow & Tools</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Dev Environment</span>
+            </div>
+          </div>
+
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>Git & GitHub</strong>
+                </span>
+                <span class="skill-badge">Version Control</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 84%;"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>VS Code & Debugging</strong>
+                </span>
+                <span class="skill-badge">Development IDE</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">
+                  <strong>Hackathon Teamwork</strong>
+                </span>
+                <span class="skill-badge">SIH Collaboration</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Projects Showcase Section
+       ======================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Work</span>
+        <h2 class="section-title">Projects I've Built & Contributed To</h2>
+        <p class="section-subtitle">A showcase of practical engineering spanning hackathon platforms, academic collaborative tools, and desktop GUI applications.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects (3)</button>
+        <button class="filter-btn" data-filter="hackathon">Hackathon (SIH)</button>
+        <button class="filter-btn" data-filter="web">Web & Frontend</button>
+        <button class="filter-btn" data-filter="python">Python & GUI</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: Smart India Hackathon (SIH) Crop Procurement -->
+        <article class="project-card" data-category="hackathon web">
+          <div class="project-banner">
+            <img src="assets/images/project-crop.svg" alt="Crop Procurement Platform for Farmers - Smart India Hackathon" class="project-img">
+            <span class="project-overlay-badge badge-sih">🏆 SIH Project</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-top">
+              <span class="project-type-tag">Team Hackathon • Agriculture Web Platform</span>
+            </div>
+            <h3 class="project-title">Farmer Crop Procurement Platform</h3>
+            <p class="project-desc">
+              Developed as part of our team's participation in the <strong>Smart India Hackathon (SIH)</strong>. The web application digitizes the crop procurement process for farmers, eliminating middlemen, providing real-time mandi prices, and facilitating direct trade with authorized buyers.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-row">
+                <span class="highlight-icon">✓</span>
+                <span>Direct farmer-to-buyer bidding pipeline for fair MSP</span>
+              </div>
+              <div class="highlight-row">
+                <span class="highlight-icon">✓</span>
+                <span>Responsive frontend designed for low-bandwidth rural access</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">SIH Hackathon</span>
+              <span class="tech-tag">Frontend UI</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary btn-card-action btn-view-details" data-project="sih">
+                <span>View Details</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </button>
+              <a href="https://github.com/devjeswani" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-card-action">
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Peer Notes Upload & Resource Sharing Portal -->
+        <article class="project-card" data-category="web">
+          <div class="project-banner">
+            <img src="assets/images/project-notes.svg" alt="Academic Notes Upload and Sharing Hub" class="project-img">
+            <span class="project-overlay-badge badge-group">👥 Group Project</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-top">
+              <span class="project-type-tag">Academic Hub • Web Application</span>
+            </div>
+            <h3 class="project-title">College Notes Sharing & Upload Hub</h3>
+            <p class="project-desc">
+              A collaborative student resource hub designed to centralize semester notes, reference guides, and lecture slides. Built alongside group members to empower students with streamlined academic material sharing.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-row">
+                <span class="highlight-icon">✓</span>
+                <span>Structured semester, subject, and branch classification</span>
+              </div>
+              <div class="highlight-row">
+                <span class="highlight-icon">✓</span>
+                <span>User-friendly file upload interface with format filters</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">Frontend Dev</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Team Project</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary btn-card-action btn-view-details" data-project="notes">
+                <span>View Details</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </button>
+              <a href="https://github.com/devjeswani" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-card-action">
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Python Tkinter Calculator -->
+        <article class="project-card" data-category="python">
+          <div class="project-banner">
+            <img src="assets/images/project-calculator.svg" alt="Python Tkinter Calculator GUI Application" class="project-img">
+            <span class="project-overlay-badge badge-solo">🐍 Python GUI</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-top">
+              <span class="project-type-tag">Desktop Application • Python Core</span>
+            </div>
+            <h3 class="project-title">Python GUI Desktop Calculator</h3>
+            <p class="project-desc">
+              A native desktop calculator application built using Python's standard <strong>Tkinter</strong> graphical library. Features a clean, grid-based keypad, robust expression evaluation, precision floating-point arithmetic, and defensive exception handling.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-row">
+                <span class="highlight-icon">✓</span>
+                <span>Robust arithmetic evaluation with zero-division handling</span>
+              </div>
+              <div class="highlight-row">
+                <span class="highlight-icon">✓</span>
+                <span>Clean Tkinter grid geometry with interactive hover feedback</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">Python 3</span>
+              <span class="tech-tag">Tkinter GUI</span>
+              <span class="tech-tag">Event-Driven</span>
+              <span class="tech-tag">Algorithms</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary btn-card-action btn-view-details" data-project="calc">
+                <span>View Details</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </button>
+              <a href="https://github.com/devjeswani" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-card-action">
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Education & Milestones Timeline
+       ======================================================================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Education & Milestones</span>
+        <h2 class="section-title">My Academic & Tech Journey</h2>
+        <p class="section-subtitle">Consistent focus on high-calibre IT education and collaborative coding experiences.</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        
+        <!-- Timeline Item 1: IIPS DAVV -->
+        <div class="timeline-card">
+          <div class="timeline-marker">
+            <div class="marker-inner"></div>
+          </div>
+          <div class="timeline-header">
+            <h3 class="timeline-role">M.Tech Integrated in Information Technology</h3>
+            <span class="timeline-period">Currently Pursuing</span>
+          </div>
+          <div class="timeline-org">International Institute of Professional Studies (IIPS), DAVV, Indore</div>
+          <p class="timeline-desc">
+            Enrolled in the prestigious 5-year Integrated Master of Technology program in Information Technology. Engaging deeply in computer system architecture, algorithmic complexity, object-oriented programming (C++, Python), relational databases, and enterprise software principles.
+          </p>
+        </div>
+
+        <!-- Timeline Item 2: Smart India Hackathon -->
+        <div class="timeline-card">
+          <div class="timeline-marker">
+            <div class="marker-inner"></div>
+          </div>
+          <div class="timeline-header">
+            <h3 class="timeline-role">Smart India Hackathon (SIH) Participant</h3>
+            <span class="timeline-period">National Level Event</span>
+          </div>
+          <div class="timeline-org">Ministry of Education / AICTE Innovation Cell</div>
+          <p class="timeline-desc">
+            Collaborated in a multidisciplinary team to solve real-world agricultural supply chain bottlenecks. Built and demonstrated a web platform for direct crop procurement to eliminate predatory middlemen and secure better financial returns for farmers.
+          </p>
+        </div>
+
+        <!-- Timeline Item 3: Personal Software Building -->
+        <div class="timeline-card">
+          <div class="timeline-marker">
+            <div class="marker-inner"></div>
+          </div>
+          <div class="timeline-header">
+            <h3 class="timeline-role">Hands-On Development & Learning</h3>
+            <span class="timeline-period">Continuous</span>
+          </div>
+          <div class="timeline-org">Self-Directed & Peer Projects</div>
+          <p class="timeline-desc">
+            Continuously constructing software from foundational Python GUI applications (Tkinter) to collaborative academic portals (Notes Hub) and responsive frontend applications with modern HTML, CSS, and JavaScript.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Contact & Connect Section
+       ======================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Connect & Collaborate</h2>
+        <p class="section-subtitle">Interested in discussing a project, internship opportunity, or simply talking tech? Drop me a message!</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Direct Contact Information -->
+        <div class="contact-info-panel">
+          
+          <!-- Email Card -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card-details">
+              <div class="contact-card-label">Email Address</div>
+              <div class="contact-card-value">devjeswani1@gmail.com</div>
+            </div>
+            <button class="btn-copy-email copy-email-btn" title="Copy to clipboard">
+              Copy
+            </button>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <a href="https://linkedin.com/in/devjeswani" target="_blank" rel="noopener noreferrer" class="contact-card" title="Open LinkedIn Profile">
+            <div class="contact-card-icon" style="background:rgba(10,102,194,0.12); color:#0a66c2;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </div>
+            <div class="contact-card-details">
+              <div class="contact-card-label">LinkedIn Profile</div>
+              <div class="contact-card-value">linkedin.com/in/devjeswani</div>
+            </div>
+            <span style="color:var(--text-muted); font-size:1.1rem;">↗</span>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/devjeswani" target="_blank" rel="noopener noreferrer" class="contact-card" title="Open GitHub Profile">
+            <div class="contact-card-icon" style="background:rgba(255,255,255,0.08); color:var(--text-primary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-card-details">
+              <div class="contact-card-label">GitHub Repository</div>
+              <div class="contact-card-value">github.com/devjeswani</div>
+            </div>
+            <span style="color:var(--text-muted); font-size:1.1rem;">↗</span>
+          </a>
+
+          <!-- University Location Card -->
+          <div class="contact-card">
+            <div class="contact-card-icon" style="background:rgba(16,185,129,0.12); color:#10b981;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-card-details">
+              <div class="contact-card-label">Institution & Location</div>
+              <div class="contact-card-value">IIPS DAVV, Indore, Madhya Pradesh, India</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive Direct Message Form -->
+        <div class="contact-form-panel">
+          <h3 class="form-title">Send Me a Direct Message</h3>
+          <p class="form-subtitle">Fill in the fields below and it will directly route to my personal email inbox.</p>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="sender-name" class="form-label">Your Name *</label>
+              <input type="text" id="sender-name" class="form-input" placeholder="e.g. Alex Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label for="sender-email" class="form-label">Your Email *</label>
+              <input type="email" id="sender-email" class="form-input" placeholder="e.g. alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="sender-subject" class="form-label">Subject</label>
+              <input type="text" id="sender-subject" class="form-input" placeholder="e.g. Project Opportunity / Collaboration">
+            </div>
+
+            <div class="form-group">
+              <label for="sender-message" class="form-label">Message *</label>
+              <textarea id="sender-message" class="form-textarea" placeholder="Hello Dev, I came across your portfolio..." required></textarea>
+            </div>
+
+            <div id="form-status" class="form-status-msg"></div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; padding:14px;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">Dev Jeswani</span>
+        <span class="footer-copy">© 2026 Dev Jeswani • M.Tech Integrated (IT) IIPS DAVV • Built with passion and precision</span>
+      </div>
+
+      <div class="footer-right">
+        <button id="back-to-top" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+          ↑
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Interactive Modal for Project Details
+       ======================================================================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">✕</button>
+      <div id="modal-dynamic-content">
+        <!-- Injected via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
